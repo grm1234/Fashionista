@@ -1,0 +1,13 @@
+<div class="card text-center">
+    <form [formGroup]="companyRef" (ngSubmit)="storeCompanyDetails()">
+        <label>Company Id</label><br/>
+        <input type="text" formControlName="_id"/><br/>
+        ID should be one higher/lower than highest/lowest ID in table and not negative<br><br/>
+        <label>Company Name</label><br/>
+        <input type="text" formControlName="name"/><br/><br/>
+        <input type="submit" class="btn btn-secondary"><br/>
+    </form><br/>
+    <div class="card-footer text-muted">
+        <button class="btn btn-secondary" (click)="goBack()">Go Back</button>
+    </div>
+</div>
